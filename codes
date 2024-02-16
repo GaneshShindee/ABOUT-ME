@@ -7,31 +7,75 @@ class players{
         this.age = age;
         this.jerseyNum = jerseyNum;
     }
-
     public void display(){
         System.out.println("Name : "+name);
         System.out.println("Jersey Number : "+jerseyNum);
         System.out.println("Age : "+age);
     }
 }
+
 class CricketPlayer extends players {
     int runs;
     int century;
 
-    public CricketPlayer(String name, int age, int jerseyNum) {
+    public CricketPlayer(String name, int age, int jerseyNum,int runs, int century) {
         super(name, age, jerseyNum);
         this.runs = runs;
         this.century = century;
-    }
-
-    public CricketPlayer(String name, int age, int jerseyNum, int runs, int century) {
-        super(name,age,jerseyNum);
-        
     }
 
     public void display() {
         super.display();
         System.out.println("Runs : " + runs);
         System.out.println("Centuries : " + century);
+    }
+}
+
+class FootballPlayer extends players{
+    int goals;
+    int penalties;
+    public FootballPlayer(String name, int age, int jerseyNum,int goals,int penalties){
+        super(name,age,jerseyNum);
+        this.goals = goals;
+        this.penalties = penalties;
+    }
+
+    public void display(){
+        super.display();
+        System.out.println("Goals : "+goals);
+        System.out.println("Penalties : "+penalties);
+    }
+}
+
+class HockeyPlayer extends players{
+    int goals;
+    int defence;
+    public HockeyPlayer(String name, int age, int jerseyNum,int goals,int defence){
+        super(name,age,jerseyNum);
+        this.goals = goals;
+        this.defence = defence;
+    }
+    
+    public void display(){
+        super.display();
+        System.out.println("Goals : "+goals);
+        System.out.println("Penalties : "+defence);
+    }
+}
+
+public class Inheritance{
+    public static void main(String[] args) {
+        CricketPlayer cricketPlayer = new CricketPlayer("Dhoni",43,7,10773,10);
+        FootballPlayer footballPlayer = new FootballPlayer("Messi",40,10,354,53);
+        HockeyPlayer hockeyPlayer = new HockeyPlayer("Ram",20,7,43,64);
+
+        System.out.println("Cricket Player:");
+        cricketPlayer.display();
+
+        System.out.println("\nFootball Player:");
+        footballPlayer.display();
+
+        System.out.println("\nHockey Player:");
+        hockeyPlayer.display();
     }
 }
