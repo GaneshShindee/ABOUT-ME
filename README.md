@@ -5,3 +5,26 @@
 🌱 I’m currently getting into the Generative AI spaces.
 💬 Ask me about cp , dsa, ML , DL , data science , Cloud(GCP).
 ⚡ Fun fact - I can read whole documentation of any code without getting bored.
+Make your README (2)
+Typing SVG
+
+Connect with me on:
+LinkedIn Reddit Stack Overflow
+
+Tech Stack:
+C C++ Java Julia Python R
+
+AWS Google Cloud
+
+Git Bitbucket GitHub
+
+Keras PyTorch scikit-learn SciPy TensorFlow
+
+Linux Arduino Jira
+
+GitHub stats
+
+GitHub Streak
+
+Atharva's github activity graph
+
